@@ -1,1 +1,12 @@
-<p>home works!</p>
+<app-loading class="m-5" *ngIf="loading"></app-loading>
+
+<div *ngIf="error" class="alert alert-danger animated fadeIn">
+    <h3>Error</h3>
+    <p>
+        {{ mensajeError }}
+    </p>
+</div>
+
+
+
+<app-tarjeta [items]="nuevasCanciones"></app-tarjeta>
